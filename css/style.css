@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=Roboto:wght@400;500;700&display=swap');
+
+
+:root{
+    --cor-primaria: #1A535C;  /*Texto e titulos*/
+    --cor-secundaria:#177E89;   /*Subtitulo*/
+    --cor-terciaria: #97c9cf;   /*background de div para ressaltar uma parte*/
+    --cor-background: #F7F7FF; /*background do html*/ /* ou esse #F4F3EE*/
+    --font-titulo: Verdana, Geneva, Tahoma, sans-serif;
+    --font-paragrafo:'Roboto', sans-serif;
+}
