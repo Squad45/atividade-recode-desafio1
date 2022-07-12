@@ -9,3 +9,23 @@
     --font-titulo: Verdana, Geneva, Tahoma, sans-serif;
     --font-paragrafo:'Roboto', sans-serif;
 }
+
+/* FORMULÁRIO EMPRESA */
+.section-form-empresa{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /*por enquanto*/
+    height: auto
+}
+.form-empresa{
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+    padding: 2%;
+    width: 80%;
+}
+.div-flex{
+    display: flex;
+    flex-direction: column;
+}

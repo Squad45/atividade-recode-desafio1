@@ -22,6 +22,99 @@
           <a class="nav-link text-dark" href="./cadastro1_geral.html">CADASTRE-SE</a>
       </nav>
     </section>
+
+  
+    <section class="container-fluid section-form-empresa">
+      
+      <form action="" class="form-empresa">
+        <div class="row">
+            
+          <div class="col-sm">
+            <div class="nome div-flex">
+              <label for="nome">Nome completo</label>
+              <input type="text" placeholder="Digite...">
+            </div>
+
+            <div class="cpf div-flex">
+              <label for="cpf">CPF:</label>
+              <input type="text" placeholder="Digite...">
+              <small class="text-muted">apenas número</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="endereço col-sm div-flex">
+            <label for="endereço">Endereço:</label>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">Endereço</small>
+
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">CEP</small>
+          </div>
+
+          <div class="contato col-sm div-flex">
+            <label for="contato">Forma de contato:</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx">
+            <small class="text-muted">Numero de telefone</small>
+            <input type="email" placeholder="Digite...">
+            <small class="text-muted">Email</small>
+          </div>
+
+        </div> 
+
+
+        <!-- ESCOLHA -->
+        <div class="escolha div-flex" style="align-items: center;">
+          <select name="escolha" id="opcao-doar">
+            <option value="padrão">--Você...</option>
+            <option value="doador">É doador</option>
+            <option value="preciso-equip">Precisa de equipamento</option>
+          </select>
+        </div>
+
+        <div class="row">
+                <!-- DIV ESCOLHA DOADOR -->
+          <div class="col-sm div-flex">
+            <select name="equipamento" id="equipamento">
+              <option value="padrão">--O que você quer doar</option>
+              <option value="computador">Computador</option>
+              <option value="notebook">Notebook</option>
+              <option value="mobile">Dispositivo Mobile</option>
+            </select>
+            
+            <input type="submit">
+          </div>
+
+          <div class="col-sm div-flex">
+            <label for="expecificações">fale sobre o dispositivo</label>
+            <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
+          </div>
+          
+        </div>  
+
+        <div>
+          <!-- DIV ESCOLHA PRECISA DE DOAÇÃO -->
+          <div class="div-flex">
+            <label for="">Explique sobre a situação da sua escola</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="intuito da doação, quantidade de turma, etc..."></textarea>
+  
+            <input type="submit">
+          </div>
+        </div>  
+
+
+      </form>
+
+
+
+
+
+
+
+
     <!-- 
         nome completo
         CPF
