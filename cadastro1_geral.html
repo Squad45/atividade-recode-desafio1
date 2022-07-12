@@ -21,19 +21,254 @@
           <a class="nav-link text-dark" href="./cadastro1_geral.html">CADASTRE-SE</a>
       </nav>
     </section>
-       
+    
 
+
+    <!-- botão escolha para qual cadastro ir -->
+    <section class="container section-btn">
+      <h1 class="titulo">Escolha uma das opções para cadastro</h1>
+      <div class="div-btn">
+      <button onclick="formEmpresa()">INSTITUIÇÃO/EMPRESA</button>
+      <button onclick="formPessoa()">PESSOA</button>
+      </div>
+    </section>
+
+
+    
+    <!--  CADASTRO PESSOAL -->
+    <section class="container-fluid section-form-geral disp-none" id="pessoal">
+      <h2 class="titulo">Cadastro Pessoal</h2>
+      <form action="" class="form-empresa">
+        
+        <div class="row">
+            
+          <div class="col-sm">
+            <div class="nome div-flex">
+              <label for="nome">Nome completo</label>
+              <input type="text" placeholder="Digite...">
+            </div>
+
+            <div class="cpf div-flex">
+              <label for="cpf">CPF:</label>
+              <input type="text" placeholder="Digite...">
+              <small class="text-muted">apenas número</small>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="endereço col-sm div-flex">
+            <label for="endereço">Endereço:</label>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">Endereço</small>
+
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">CEP</small>
+          </div>
+
+          <div class="contato col-sm div-flex">
+            <label for="contato">Forma de contato:</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx">
+            <small class="text-muted">Numero de telefone</small>
+            <input type="email" placeholder="Digite...">
+            <small class="text-muted">Email</small>
+          </div>
+
+        </div> 
+
+
+        <!-- ESCOLHA -->
+        <div class="escolha div-flex" style="align-items: center;">
+          <select name="escolha" id="opcao-doar">
+            <option value="padrão">--Você...</option>
+            <option value="doador">É doador</option>
+            <option value="preciso-equip">Precisa de equipamento</option>
+          </select>
+        </div>
+
+        <div class="row">
+                <!-- DIV ESCOLHA DOADOR -->
+          <div class="col-sm div-flex">
+            <select name="equipamento" id="equipamento">
+              <option value="padrão">--O que você quer doar</option>
+              <option value="computador">Computador</option>
+              <option value="notebook">Notebook</option>
+              <option value="mobile">Dispositivo Mobile</option>
+            </select>
+            
+            <input type="submit">
+          </div>
+
+          <div class="col-sm div-flex">
+            <label for="expecificações">fale sobre o dispositivo</label>
+            <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
+          </div>
+          
+        </div>  
+
+        <div>
+          <!-- DIV ESCOLHA PRECISA DE DOAÇÃO -->
+          <div class="div-flex">
+            <label for="">Explique sobre a situação da sua escola</label>
+            <textarea name="" id="" cols="30" rows="10" placeholder="intuito da doação, quantidade de turma, etc..."></textarea>
+  
+            <input type="submit">
+          </div>
+        </div>  
+
+
+      </form>
+
+
+    </section>
+
+
+
+    <!-- CADASTRO EMPRESA -->
+    <section class="container-fluid section-form-geral disp-none" id="empresa">
+      <h2 class="titulo">Cadastrando Empresa</h2>
+      
+      <form action="" class="form-empresa">
+
+        <!-- LINHA 1 -->
+    <div class="row">
+      <!-- COLUNA 1 LINHA 1 -->
+        <div class="col-sm">
+          <div class="nome div-flex">
+            <label for="nome">Nome da empresa/escola:</label>
+            <input type="text" placeholder="Digite...">
+          </div>
+
+          <div class="cnpj div-flex">
+            <label for="cnpj">CNPJ:</label>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">apenas número</small>
+          </div>
+        </div>
+
+      <!-- COLUNA 2 LINHA 1 -->
+        <div class="representante col-sm">
+          
+          <div class="div-flex">
+            <label for="representante">Representante da empresa/escola:</label>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">nome do representante</small>
+          </div>
+          
+          <div class="div-flex">
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">Cargo do representante</small>
+          </div>
+
+        </div>
+    </div>
+
+      <!-- LINHA 2 -->
+      <div class="row">
+
+      <!-- COLUNA 1 LINHA 2 -->
+        <div class="endereço col-sm div-flex">
+          <label for="endereço">Endereço:</label>
+          <input type="text" placeholder="Digite...">
+          <small class="text-muted">Endereço</small>
+
+          <input type="text" placeholder="Digite...">
+          <small class="text-muted">CEP</small>
+        </div>
+
+      <!-- COLUNA 2 LINHA 2 -->
+        <div class="contato col-sm div-flex">
+          <label for="contato">Forma de contato:</label>
+          <input type="tel" placeholder="(xx) xxxxx-xxxx">
+          <small class="text-muted">Numero de telefone</small>
+          <input type="email" placeholder="Digite...">
+          <small class="text-muted">Email</small>
+        </div>
+
+      </div> 
+
+
+        <!-- ESCOLHA -->
+        <div class="escolha div-flex" style="align-items: center;">
+          <select name="escolha" id="opcao-doar">
+            <option value="padrão">--Você...</option>
+            <option value="doador">É doador</option>
+            <option value="preciso-equip">Precisa de equipamento</option>
+          </select>
+        </div>
+
+
+        <!-- LINHA 3 -->
+      <div class="row">
+
+        <!-- COLUNA 1 LINHA 3 -->
+        <!-- DIV ESCOLHA DOADOR -->
+        <div class="col-sm div-flex">
+          <select name="equipamento" id="equipamento">
+            <option value="padrão">--O que você quer doar</option>
+            <option value="computador">Computador</option>
+            <option value="notebook">Notebook</option>
+            <option value="mobile">Dispositivo Mobile</option>
+          </select>
+
+          <input type="submit">
+        </div>
+      
+        <!-- COLUNA 2 LINHA 3 -->
+        <div class="col-sm div-flex">
+          <label for="expecificações">fale sobre o dispositivo</label>
+          <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
+        </div>
+
+      </div>
+
+      <div>
+        <!-- DIV ESCOLHA PRECISA DE DOAÇÃO -->
+        <div class="div-flex">
+          <label for="">Explique sobre a situação da sua escola</label>
+          <textarea name="" id="" cols="30" rows="10" placeholder="intuito da doação, quantidade de turma, etc..."></textarea>
+
+          <input type="submit">
+        </div>
+      </div>  
+
+      </form>
+
+
+    </section>
+
+
+
+
+
+    
 
     <!-- 
             nome
             CEP
             escolha(empresa   levaria para outra pagina dependendo da escolha
                     pessos)
+            
              -->
 
 
 
+<!-- script para cadastro aparecer e desaparecer -->
+<script>
+  const pessoa = document.getElementById("pessoal");
+  const empresa = document.getElementById("empresa");
 
+  function formPessoa(){
+    pessoa.classList.remove("disp-none");
+    empresa.classList.add("disp-none");
+  }
+  function formEmpresa(){
+    empresa.classList.remove("disp-none");
+    pessoa.classList.add("disp-none");
+  }
+</script>
 
 
     <!-- Bootstrap JavaScript Libraries -->
