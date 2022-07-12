@@ -79,38 +79,42 @@
         </div> 
 
 
+
         <!-- ESCOLHA -->
         <div class="escolha div-flex" style="align-items: center;">
-          <select name="escolha" id="opcao-doar">
+          <select name="escolha" id="opcao-pessoa" onchange="pessoaEscolha()">
             <option value="padrão">--Você...</option>
             <option value="doador">É doador</option>
             <option value="preciso-equip">Precisa de equipamento</option>
           </select>
         </div>
 
-        <div class="row">
-                <!-- DIV ESCOLHA DOADOR -->
-          <div class="col-sm div-flex">
-            <select name="equipamento" id="equipamento">
-              <option value="padrão">--O que você quer doar</option>
-              <option value="computador">Computador</option>
-              <option value="notebook">Notebook</option>
-              <option value="mobile">Dispositivo Mobile</option>
-            </select>
-            
-            <input type="submit">
-          </div>
+        <div class="disp-none" id="pessoa-doador">
+          <div class="row">
+                  <!-- DIV ESCOLHA DOADOR -->
+            <div class="col-sm div-flex">
+              <select name="equipamento" id="equipamento">
+                <option value="padrão">--O que você quer doar</option>
+                <option value="computador">Computador</option>
+                <option value="notebook">Notebook</option>
+                <option value="mobile">Dispositivo Mobile</option>
+              </select>
+              
+              <input type="submit">
+            </div>
 
-          <div class="col-sm div-flex">
-            <label for="expecificações">fale sobre o dispositivo</label>
-            <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
-          </div>
+            <div class="col-sm div-flex">
+              <label for="expecificações">fale sobre o dispositivo</label>
+              <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
+            </div>
+            
+          </div> 
           
-        </div>  
+        </div>
 
         <div>
           <!-- DIV ESCOLHA PRECISA DE DOAÇÃO -->
-          <div class="div-flex">
+          <div class="div-flex disp-none" id="pessoa-precisa">
             <label for="">Explique sobre a situação da sua escola</label>
             <textarea name="" id="" cols="30" rows="10" placeholder="intuito da doação, quantidade de turma, etc..."></textarea>
   
@@ -166,33 +170,34 @@
     </div>
 
       <!-- LINHA 2 -->
-      <div class="row">
+        <div class="row">
 
-      <!-- COLUNA 1 LINHA 2 -->
-        <div class="endereço col-sm div-flex">
-          <label for="endereço">Endereço:</label>
-          <input type="text" placeholder="Digite...">
-          <small class="text-muted">Endereço</small>
+          <!-- COLUNA 1 LINHA 2 -->
+          <div class="endereço col-sm div-flex">
+            <label for="endereço">Endereço:</label>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">Endereço</small>
 
-          <input type="text" placeholder="Digite...">
-          <small class="text-muted">CEP</small>
-        </div>
+            <input type="text" placeholder="Digite...">
+            <small class="text-muted">CEP</small>
+          </div>
 
-      <!-- COLUNA 2 LINHA 2 -->
-        <div class="contato col-sm div-flex">
-          <label for="contato">Forma de contato:</label>
-          <input type="tel" placeholder="(xx) xxxxx-xxxx">
-          <small class="text-muted">Numero de telefone</small>
-          <input type="email" placeholder="Digite...">
-          <small class="text-muted">Email</small>
-        </div>
+          <!-- COLUNA 2 LINHA 2 -->
+          <div class="contato col-sm div-flex">
+            <label for="contato">Forma de contato:</label>
+            <input type="tel" placeholder="(xx) xxxxx-xxxx">
+            <small class="text-muted">Numero de telefone</small>
+            <input type="email" placeholder="Digite...">
+            <small class="text-muted">Email</small>
+          </div>
 
-      </div> 
+        </div> 
+
 
 
         <!-- ESCOLHA -->
         <div class="escolha div-flex" style="align-items: center;">
-          <select name="escolha" id="opcao-doar">
+          <select name="escolha" id="opcao-empresa" onchange="empresaEscolha()">
             <option value="padrão">--Você...</option>
             <option value="doador">É doador</option>
             <option value="preciso-equip">Precisa de equipamento</option>
@@ -201,30 +206,33 @@
 
 
         <!-- LINHA 3 -->
-      <div class="row">
+      <div class="disp-none" id="empresa-doador">
+        <div class="row">
 
-        <!-- COLUNA 1 LINHA 3 -->
-        <!-- DIV ESCOLHA DOADOR -->
-        <div class="col-sm div-flex">
-          <select name="equipamento" id="equipamento">
-            <option value="padrão">--O que você quer doar</option>
-            <option value="computador">Computador</option>
-            <option value="notebook">Notebook</option>
-            <option value="mobile">Dispositivo Mobile</option>
-          </select>
+          <!-- COLUNA 1 LINHA 3 -->
+          <!-- DIV ESCOLHA DOADOR -->
+          <div class="col-sm div-flex">
+            <select name="equipamento" id="equipamento">
+              <option value="padrão">--O que você quer doar</option>
+              <option value="computador">Computador</option>
+              <option value="notebook">Notebook</option>
+              <option value="mobile">Dispositivo Mobile</option>
+            </select>
 
-          <input type="submit">
+            <input type="submit">
+          </div>
+        
+          <!-- COLUNA 2 LINHA 3 -->
+          <div class="col-sm div-flex">
+            <label for="expecificações">fale sobre o dispositivo</label>
+            <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
+          </div>
+
         </div>
-      
-        <!-- COLUNA 2 LINHA 3 -->
-        <div class="col-sm div-flex">
-          <label for="expecificações">fale sobre o dispositivo</label>
-          <textarea name="expecificações" id="expecificações" cols="40" rows="10" placeholder="Digite as especificações do equipamento, processador, ano, problemas, etc."></textarea>
-        </div>
-
       </div>
 
-      <div>
+
+      <div class="disp-none" id="empresa-precisa">
         <!-- DIV ESCOLHA PRECISA DE DOAÇÃO -->
         <div class="div-flex">
           <label for="">Explique sobre a situação da sua escola</label>
@@ -268,6 +276,71 @@
     empresa.classList.remove("disp-none");
     pessoa.classList.add("disp-none");
   }
+
+
+  // script para criar a aparecer e desaparecer da escolha
+
+  //PARTE 1 - CADASTRO PESSOAL
+  
+  //o select q dará o valor
+  const selectPessoa = document.getElementById("opcao-pessoa");
+  
+  //div q serão mudadas
+  const pessoaDoador = document.getElementById("pessoa-doador");
+  const pessoaPrecisa = document.getElementById("pessoa-precisa");
+  
+  
+  // função que fará o processo magico de aparecer e desaparecer
+  function pessoaEscolha(){
+    
+    //pegando o valor da tag select
+    let valuePessoa = selectPessoa.options[selectPessoa.selectedIndex].value;
+    console.log(valuePessoa)
+
+    //condição para o que irá fazer ao escolher
+    if(valuePessoa === "doador"){
+      pessoaDoador.classList.remove("disp-none");
+      pessoaPrecisa.classList.add("disp-none");
+      
+    }else if(valuePessoa === "preciso-equip"){
+      pessoaDoador.classList.add("disp-none");
+      pessoaPrecisa.classList.remove("disp-none");
+
+    };
+
+  };
+
+  //PARTE 2 - CADASTRO INSTITUIÇÃO
+
+   //o select q dará o valor
+   const selectEmpresa = document.getElementById("opcao-empresa");
+
+   //div q serão mudadas
+  const empresaDoador = document.getElementById("empresa-doador");
+  const empresaPrecisa = document.getElementById("empresa-precisa");
+
+  
+  // função que fará o processo magico de aparecer e desaparecer
+  function empresaEscolha(){
+    
+    //pegando o valor da tag select
+     let valueEmpresa = selectEmpresa.options[selectEmpresa.selectedIndex].value;
+      console.log(valueEmpresa)
+
+    //condição para o que irá fazer ao escolher
+    if(valueEmpresa === "doador"){
+      empresaDoador.classList.remove("disp-none");
+      empresaPrecisa.classList.add("disp-none");
+      
+    }else if(valueEmpresa === "preciso-equip"){
+      empresaDoador.classList.add("disp-none");
+      empresaPrecisa.classList.remove("disp-none");
+
+    };
+
+  };
+
+
 </script>
 
 
