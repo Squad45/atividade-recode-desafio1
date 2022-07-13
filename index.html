@@ -15,17 +15,17 @@
 
     <div class="background">
       <!-- section da header navbar -->
-      <section class="container-fuid">
+      <section class="container-fluid">
         <nav class="nav justify-content-center fixed-top">
             <a class="nav-link text-dark" href="./index.html">HOME</a>
             <a class="nav-link text-dark" href="./projeto.html">PROJETOS</a>
-            <a class="nav-link text-dark" href="./contatos.html">CONTATOS</a>
             <a class="nav-link text-dark" href="./cadastro1_geral.html">CADASTRE-SE</a>
+            <a class="nav-link text-dark" href="./contatos.html">CONTATOS</a>
         </nav>
       </section>
       
       <!-- section da header -->
-      <section class="container-fluid">
+      <section>
       <header class="header">
         <div class="conteudo-header">
           <div class="texto-header">
@@ -40,26 +40,29 @@
       </header>
       </section>
 
-      <section class="container">
-        <main>
+      <!-- Área com um pouco de dados -->
+      <section class="container texto-explicativo">
+        <main class="main-1">
+
+          <h3 class="titulo">Missao, Valores e Visão</h3>
           <div class="row">
 
             <!-- COLUNA 1 -->
             <div class="col-sm main-col">
-              <h3>Lorem, ipsum.</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus illum ratione maxime, qui velit nihil quia ullam tenetur molestias delectus?</p>
+              <h3 class="titulo-d">Missão</h3>
+              <p class="lorem-d">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus illum ratione maxime, qui velit nihil quia ullam tenetur molestias delectus?</p>
             </div>
 
             <!-- COLUNA 2 -->
             <div class="col-sm main-col">
-              <h3>Lorem, ipsum.</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus excepturi fuga impedit nisi laudantium saepe quod. Enim, cupiditate quas?</p>
+              <h3 class="titulo-d">Valores</h3>
+              <p class="lorem-d">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi possimus excepturi fuga impedit nisi laudantium saepe quod. Enim, cupiditate quas?</p>
             </div>
 
             <!-- COLUNA 3 -->
             <div class="col-sm main-col">
-              <h3>Lorem, ipsum.</h3>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam quisquam dolorem beatae! Praesentium reiciendis nostrum cumque excepturi ratione numquam.</p>
+              <h3 class="titulo-d">Visão</h3>
+              <p class="lorem-d">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci incidunt similique debitis repudiandae nobis impedit culpa iure ipsa, voluptas suscipit distinctio et quas eos rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt laboriosam quisquam dolorem beatae! Praesentium reiciendis nostrum cumque excepturi ratione numquam.</p>
             </div>
 
           </div>
@@ -71,23 +74,51 @@
 
 
     
-      <!-- área de dados -->
-      <section class="container texto-explicativo">
-        <!-- terá uma explicação básica do projeto e terá um botão para pagina PROJETO, que será uma pagina explicativa de tudo, mais completa -->
-
-        <!-- botao para ir ao projeto -->
-      </section>
 
       <!-- área de exposição -->
-      <section class="container empresa">
+      <section class="container-fluid apresentação-empresa">
+        <main class="main-2">
+          <h3 class="titulo">Empresas que confiam no nosso projeto</h3>
 
-        <!-- área q iremos divulgar as empresas parceiras fictícias ou não -->
-        <!-- PARCEIRO PEGAR A LOGO DA RECODE -->
+          <div class="row">
+            <!-- empresa 1 -->
+            <div class="col-sm div-logo">
+              <img class="img-logo" src="./img/img-logos/logo-intel1.jpg" alt="Intel">
+              <small class="text-muted">Intel</small>
+            </div>
+            <!-- empresa 2 -->
+            <div class="col-sm div-logo">
+              <img class="img-logo" src="./img/img-logos/bradesco-logo1.png" alt="Bradesco">
+              <small class="text-muted">Bradesco</small>
+            </div>
+            <!-- empresa 3 -->
+            <div class="col-sm div-logo">
+              <img class="img-logo" src="./img/img-logos/recode-logos.svg" alt="">
+              <small class="text-muted">Recode</small>
+            </div>
+            <!-- empresa 4-->
+            <div class="col-sm div-logo">
+              <img class="img-logo" src="./img/img-logos/Logo-Positivo1.jpg" alt="">
+              <small class="text-muted">Positivo</small>
+            </div>
+          </div>
+          <!-- área q iremos divulgar as empresas parceiras fictícias ou não -->
+          <!-- PARCEIRO PEGAR A LOGO DA RECODE -->
+        </main>
       </section>
 
       <!-- footer -->
       <section class="container-fuid footer">
         <!-- so pegar algo do bootstrap q ja ta bom -->
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="./home.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="./projeto.html" class="nav-link px-2 text-muted">Projeto</a></li>
+          <li class="nav-item"><a href="./cadastro1_geral.html" class="nav-link px-2 text-muted">Cadastro</a></li>
+          <li class="nav-item"><a href="./contatos.html" class="nav-link px-2 text-muted">Contatos</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 nome do projeto</p>
+      </footer>
       </section>
     </div>
 
