@@ -6,12 +6,18 @@
     --cor-secundaria:#177E89;   /*Subtitulo*/
     --cor-terciaria: #97c9cf;   /*background de div para ressaltar uma parte*/
     --cor-background: #F7F7FF; /*background do html*/ /* ou esse #F4F3EE*/
+    --cor-tituloH: #f8f4f4;
+    --cor-paragrafoH: #f8f4f4a8;
     --font-titulo: Verdana, Geneva, Tahoma, sans-serif;
     --font-paragrafo:'Roboto', sans-serif;
+    
 }
-
+.background{
+    background-color: var(--cor-background);
+}
 .nav-link{
     font-family: var(--font-paragrafo);
+    color: var(--cor-primaria);
 }
 /* estilização dos títulos principais */
 .titulo{
@@ -19,6 +25,91 @@
     font-family: var(--font-titulo);
     font-weight: 600;
 }
+/* PAGINA PRINCIPAL */
+
+/* header */
+.header{
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    background: rgb(83,82,237);
+    /* background: linear-gradient(45deg, rgba(83,82,237,1) 15%, rgba(23,124,135,1) 79%); */
+    background: linear-gradient(100deg, rgba(83,82,237,1) 16%, rgba(23,124,135,1) 78%);
+    clip-path: polygon(50% 0, 100% 0, 100% 68%, 50% 85%, 0 70%, 0 0);
+    position: relative;
+}
+.conteudo-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.texto-header{
+    width: 380px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-header h1{
+    /* letter-spacing: 5px; */
+    align-self: flex-start;
+    color: var(--cor-tituloH);
+    font-family: var(--font-titulo);
+}
+.texto-header p{
+    color: var(--cor-paragrafoH);
+    font-family: var(--font-paragrafo);
+}
+.texto-header button{
+    background-color: var(--cor-terciaria);
+    font-family: var(--font-paragrafo);
+    font-size: 20px;
+    border: none;
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding-inline: 25px;
+    border-radius: 10px;
+}
+.texto-header button:hover{
+    transform: scale(0.95);
+    z-index: 2;
+}
+.img-header{
+    width: 30%;
+}
+@media (max-width: 850px){
+    .conteudo-header{
+        flex-direction: column;
+    }
+    .texto-header{
+    margin-top: 55px;
+
+    }
+    .img-header{
+        width: 60%;
+    }
+}
+/* main */
+
+.main-col{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-terciaria);
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.main-col:hover{
+    transition: .3s;
+    transform: scale(1.1);
+    z-index: 2;
+}
+
+
+
 
 /* ESCOLHA CADASTRO */
 .section-btn{
