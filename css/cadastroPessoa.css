@@ -1,0 +1,115 @@
+.sect-form{
+    background: linear-gradient(100deg, rgb(83, 82, 237) 16%, rgb(23, 124, 135) 78%);
+    min-height: 100vh;
+    min-width: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.img-back{
+    position: absolute;
+    z-index: 1;
+}
+.main-form-pessoa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    background-color: rgba(163, 162, 162, 0.45);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(2px);
+    width: 400px;
+    height: auto;    
+    padding: 3rem;
+
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+.linha{
+    width: 4rem;
+    height: 2px;
+    background-color: white;
+}
+.icon-btn{
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+}
+.main-form-pessoa h2{
+    color: white;
+    margin-bottom: 2rem;
+    position: relative;
+}
+.main-form-pessoa h2::before{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 128px;
+    bottom: 0;
+    left: 0;
+    border-radius: 8px;
+    background-color: rgba(20, 20, 20, 0.699);
+}
+.div-input{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    position: relative;
+}
+
+.div-input input{
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.div-input input::placeholder{
+    color:rgba(248, 246, 246, 0.7);
+}
+.btn-next{
+    border: none;
+    float: right;
+    border-radius: 10px;
+    width: 40px;
+    margin-top: 2rem;
+    padding: 0.4rem;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.div-input .underline::before{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+.div-input .underline::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background: white;
+    transform: scalex(0);
+    transition: all 0.3s ease-in-out;
+    transform-origin: left;
+}
+.div-input input:focus ~ .underline::after{
+    transform: scalex(1);
+}
+.disp-none{
+    display: none;
+}
+.escolha{
+    color: white;
+}
