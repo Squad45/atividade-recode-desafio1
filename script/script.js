@@ -11,7 +11,7 @@ const continuarE = document.getElementById("btn-continueE");
 
 //executando as funções onclick
 function proximaEtapaE(){
-    document.getElementById("iconE-2").style.backgroundColor = 'green';
+    document.getElementById("iconE-2").style.backgroundColor = "var(--cor-terciaria)";
     formEPartI.classList.add("disp-none");
     formEPartII.classList.remove("disp-none");
     prevE.classList.remove("disp-none");
@@ -19,7 +19,7 @@ function proximaEtapaE(){
     continuarE.classList.remove("disp-none");
 };
 function retornaEtapaE(){
-    document.getElementById("iconE-2").style.backgroundColor = 'white';
+    document.getElementById("iconE-2").style.backgroundColor = "white";
     formEPartI.classList.remove("disp-none");
     formEPartII.classList.add("disp-none");
     prevE.classList.add("disp-none");
@@ -39,7 +39,7 @@ const continuarP = document.getElementById("btn-continueP");
 
 //executando as funções onclick
 function proximaEtapaP(){ 
-    document.getElementById("iconP-2").style.backgroundColor = 'green';
+    document.getElementById("iconP-2").style.backgroundColor = "var(--cor-terciaria)";
     formPPartI.classList.add("disp-none");
     formPPartII.classList.remove("disp-none");
     prevP.classList.remove("disp-none");
@@ -47,7 +47,7 @@ function proximaEtapaP(){
     continuarP.classList.remove("disp-none");
 };
 function retornaEtapaP(){
-    document.getElementById("iconP-2").style.backgroundColor = 'white';
+    document.getElementById("iconP-2").style.backgroundColor = "white";
     formPPartI.classList.remove("disp-none");
     formPPartII.classList.add("disp-none");
     prevP.classList.add("disp-none");
@@ -58,17 +58,23 @@ function retornaEtapaP(){
 //para outras paginas
 function doadorP(){
     let aI = document.getElementById("ancoraP");
-    aI.href = "./cadastro1_geral.html"
+    aI.href = "./cadastro_doacao.html";
 }
 function precisoP(){
     let aI = document.getElementById("ancoraP");
-    aI.href = "./index.html"
+    aI.href = "./cadastro_preciso.html";
 }
 function doadorE(){
     let aII = document.getElementById("ancoraE");
-    aII.href = "./cadastro1_geral.html"
+    aII.href = "./cadastro_doacao.html";
 }
 function precisoE(){
     let aII = document.getElementById("ancoraE");
-    aII.href = "./index.html"
+    aII.href = "./cadastro_preciso.html";
 }
+
+const fimForm = document.getElementById("confirm");
+
+fimForm.addEventListener("click", () =>{
+    alert("formulario feito!");
+})
