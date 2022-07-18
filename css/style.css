@@ -309,6 +309,11 @@ article .row{
   background-color: var(--cor-secundaria);
   
 }
+@media (max-width: 780px){
+  .sect-feedback{
+    margin-top: 400px;
+  }
+}
 /* CADASTRO */
 .sect-form{
   background: linear-gradient(100deg, rgb(83, 82, 237) 16%, rgb(23, 124, 135) 78%);
